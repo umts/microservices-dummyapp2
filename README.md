@@ -1,24 +1,16 @@
-# README
+# microservices-dummyapp2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a single-model Rails app, designed for testing our microservices architecture.
 
-Things you may want to cover:
+The model is `ParkingSpace`, and the functionality of the app is to hold a list of parking spaces,
+and to let other services know if there are spaces available, and to handle requests for cars parking in those spaces or leaving them.
 
-* Ruby version
+First, initialize the database with `rails db:reset`.
 
-* System dependencies
+Then run a server, and test the architecture connections over on microservices-dummyapp1.
 
-* Configuration
+## Setup
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Bundle
+1. Create a `database.yml` file which points to the appropriate database.
+1. Profit
