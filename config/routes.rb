@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :parking_spaces do
+    get :available
+    post :take
+    post :clear_all
+  end
 end
